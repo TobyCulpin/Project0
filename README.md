@@ -1,3 +1,3 @@
 # Project0
 
-"Clan" website displaying stats, vids, tournaments and more
+"Clan" website displaying stats, vids, tournaments and more.
