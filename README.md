@@ -1,2 +1,3 @@
 # Project0
-Mhm
+
+"Clan" website displaying stats, vids, tournaments and more
