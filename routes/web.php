@@ -17,4 +17,4 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/admin', 'AdminController@index');
-
+Route::get('/admin/user-panel', 'AdminController@user_panel');
