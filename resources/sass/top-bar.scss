@@ -14,7 +14,7 @@ body {
 
 .container {
 	display: flex;
-    	flex-direction: row;
+	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-content: stretch;
@@ -30,19 +30,10 @@ body {
 	flex-direction: row;
 }
 
-
-.sidenav {
-	height: 100%;
-	order: 0;
-  	flex: 0 0 auto;
-  	align-self: auto;
-  	background-color: $navbgcolor;
-  	margin-left: 0;
-}
-
 .navbar {
 	display: flex;
 	font-size: 2em;
+	background-color: $navbgcolor;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
