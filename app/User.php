@@ -10,6 +10,10 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $attributes = [
+        'user_type_id' => 2, // 2 == Normal user type
+    ];
+
     /**
      * The attributes that are mass assignable.
      *
