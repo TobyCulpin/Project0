@@ -20,8 +20,11 @@
 			<td>{{ $user->name }}</td>
 			<td>{{ $user->created_at }}</td>
 			<td>{{ $user->updated_at }}</td>
+			<td><button>edit</button></td>
+			<td><button style="color: red">delete</button></td>
 		</tr>
 		@endforeach
 		@endisset
 	</table>
+	<button>Create new</button>
 @stop
