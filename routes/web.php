@@ -18,4 +18,4 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/users', 'AdminController@user_panel');
-Route::get('/admin/users/{id}', 'AdminController@edit_user');
+Route::get('/admin/users/{id}', 'UserController@edit_user');
