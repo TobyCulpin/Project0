@@ -6,6 +6,6 @@
 @section('content')
 	@csrf
 	<div class="container columns">
-		<div><a href="/admin/user-panel">Users</a></div>
+		<div><a href="/admin/users">Users</a></div>
 	</div>
 @stop

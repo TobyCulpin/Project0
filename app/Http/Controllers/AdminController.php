@@ -24,7 +24,7 @@ class AdminController extends Controller
 			->join('user_types', 'users.id', '=', 'user_types.id')
 			->get();
 
-		return view('admin.user-panel', ['users' => $users]);
+		return view('admin.users', ['users' => $users]);
 	}
 
 
