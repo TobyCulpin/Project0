@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\User;
 
 class UserController extends Controller
@@ -12,10 +13,10 @@ class UserController extends Controller
 		$this->middleware('admin');
     	}
 
-	public function edit_user($id)
+	public function edit_user($username)
 	{
 		$user = User::select('users.*')
-			->where('users.id', '=', $id)
+			->where(DB::raw("BINARY users.name"), $username)
 			->get();
 
 		return view('admin.edit-user', ['user' => $user]);
