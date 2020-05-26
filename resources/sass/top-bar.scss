@@ -1,5 +1,9 @@
+@import "global-variables";
+
 .top-bar
 {
         color: #00ff00;
         
+        position: fixed;
+        left: $test;
 }
