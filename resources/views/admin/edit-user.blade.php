@@ -1,4 +1,4 @@
-@extends('layouts.top-bar')
+@extends('layouts.default-layout')
 
 @section('title', 'Create User')
 
