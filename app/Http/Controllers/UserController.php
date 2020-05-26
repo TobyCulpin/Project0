@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\User;
+use App\UserType;
 
 class UserController extends Controller
 {
@@ -19,6 +20,34 @@ class UserController extends Controller
 			->where(DB::raw("BINARY users.name"), $username)
 			->get();
 
-		return view('admin.edit-user', ['user' => $user]);
+		$user_types = UserType::select('user_types.*')->get();
+
+		return view('admin.edit-user', ['user' => $user,
+			'user_types' => $user_types]);
+	}
+
+
+	public function update(Request $request)
+	{
+		$data = $request->all();
+
+		$user = User::select('*')
+			->where('id', '=', $data['id'])
+			->first();
+
+		$user->user_type_id = $data['user_type_id'];
+		$user->name = $data['name'];
+		$user->email = $data['email'];
+		
+		if ($data['password'] !== null && $data['confirm_password'] !== null) {
+			$user->password = $data['password'];
+			$user->confirm_password = $data['confirm_password'];
+		}
+
+		$user->updated_at = now();
+
+		$user->save();
+
+		return redirect('/');
 	}
 }
