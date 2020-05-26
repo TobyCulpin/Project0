@@ -3,9 +3,11 @@
 @section('title', 'Create User')
 
 @section('content')
-	@csrf
-	<form>
+	
+	<form action="{{url('/users/update')}}" method="post">
+		@csrf
 		@foreach ($user as $u)
+		<input id="id" name="id" value="{{ $u->id }}" hidden>
 		<div class="container columns" style="flex-grow: 1">
 			<div class="container rows">
 				<b>Username</b>
@@ -13,7 +15,7 @@
 			</div>
 			<div class="container rows">
 				<b>User Type</b>
-				<select name="usertypes" id="usertypes">
+				<select name="user_type_id" id="usertypes">
 					@foreach ($user_types as $user_type)
 					<option value="{{ $user_type->id }}">{{ $user_type->name }}</option>
 					@endforeach
@@ -33,13 +35,17 @@
 			</div>
 			<div class="container rows">
 				<b>Created At</b>
-				<input id="created_at" type="datetime" name="created_at" value="{{ $u->created_at }}" required autocomplete="created_at" autofocus disabled="disabled">
+				<input id="created_at" type="text" name="created_at" value="{{ $u->created_at }}" required autocomplete="created_at" autofocus disabled="disabled">
 			</div>
 			<div class="container rows">
 				<b>Updated At</b>
-				<input id="updated_at" type="datetime" name="updated_at" value="{{ $u->updated_at }}" required autocomplete="updated_at" autofocus disabled="disabled">
+				<input id="updated_at" type="text" name="updated_at" value="{{ $u->updated_at }}" required autocomplete="updated_at" autofocus disabled="disabled">
+			</div>
+			<div class="container rows">
+				<input type="submit" value="Update">
 			</div>
 		</div>
 		@endforeach
 	</form>
+
 @stop
