@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\User;
+use App\UserType;
 
 class UserController extends Controller
 {
@@ -19,6 +20,9 @@ class UserController extends Controller
 			->where(DB::raw("BINARY users.name"), $username)
 			->get();
 
-		return view('admin.edit-user', ['user' => $user]);
+		$user_types = UserType::select('user_types.*')->get();
+
+		return view('admin.edit-user', ['user' => $user,
+			'user_types' => $user_types]);
 	}
 }

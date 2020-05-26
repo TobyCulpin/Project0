@@ -12,6 +12,14 @@
 				<input id="name" type="text" name="name" value="{{ $u->name }}" required autocomplete="name" autofocus>
 			</div>
 			<div class="container rows">
+				<b>User Type</b>
+				<select name="usertypes" id="usertypes">
+					@foreach ($user_types as $user_type)
+					<option value="{{ $user_type->id }}">{{ $user_type->name }}</option>
+					@endforeach
+				</select>
+			</div>	
+			<div class="container rows">
 				<b>Email</b>
 				<input id="email" type="text" name="email" value="{{ $u->email }}" required autocomplete="email" autofocus>
 			</div>
