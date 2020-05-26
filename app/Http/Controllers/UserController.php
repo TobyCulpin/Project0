@@ -25,4 +25,29 @@ class UserController extends Controller
 		return view('admin.edit-user', ['user' => $user,
 			'user_types' => $user_types]);
 	}
+
+
+	public function update(Request $request)
+	{
+		$data = $request->all();
+
+		$user = User::select('*')
+			->where('id', '=', $data['id'])
+			->first();
+
+		$user->user_type_id = $data['user_type_id'];
+		$user->name = $data['name'];
+		$user->email = $data['email'];
+		
+		if ($data['password'] !== null && $data['confirm_password'] !== null) {
+			$user->password = $data['password'];
+			$user->confirm_password = $data['confirm_password'];
+		}
+
+		$user->updated_at = now();
+
+		$user->save();
+
+		return redirect('/');
+	}
 }
