@@ -7,12 +7,13 @@
 </head>
 
 <body>
+        @include('addons.top-bar')
+        @include('addons.side-bar')
+
         <div class="content">
                 @yield('content')
         </div>
         
-        @include('addons.top-bar')
-        @include('addons.side-bar')
 
 </body>
 
