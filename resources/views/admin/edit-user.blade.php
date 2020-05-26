@@ -31,7 +31,7 @@
 			</div>
 			<div class="container rows">
 				<b>Confirm password</b>
-				<input id="confirm_password" type="password" name="confirm_password" autofocus>
+				<input id="confirm_password" type="password" autofocus>
 			</div>
 			<div class="container rows">
 				<b>Created At</b>
