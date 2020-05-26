@@ -17,7 +17,11 @@
 				<b>User Type</b>
 				<select name="user_type_id" id="usertypes">
 					@foreach ($user_types as $user_type)
+					@if ($u->user_type_id === $user_type->id)
+					<option value="{{ $user_type->id }}" selected>{{ $user_type->name }}</option>
+					@else
 					<option value="{{ $user_type->id }}">{{ $user_type->name }}</option>
+					@endif
 					@endforeach
 				</select>
 			</div>	
