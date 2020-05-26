@@ -2,8 +2,8 @@
 
 <head>
 	<title>ProjectZero - @yield('title')</title>
-	<link rel="stylesheet" type="text/css" href="css/top-bar.css">
-	<link rel="stylesheet" type="text/css" href="css/side-bar.css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('/css/top-bar.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('/css/side-bar.css') }}">
 </head>
 
 <body>
