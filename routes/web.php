@@ -19,3 +19,4 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/users', 'AdminController@user_panel');
 Route::get('/admin/users/{username}', 'UserController@edit_user');
+Route::post('/users/update', 'UserController@update');
