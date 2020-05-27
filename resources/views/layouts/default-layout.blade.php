@@ -4,13 +4,15 @@
         <title>ProjectZero - @yield('title')</title>
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/top-bar.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/side-bar.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('/css/default-layout.css') }}">
 
         <script defer src="side-bar.js"></script>
+
+        @include('addons.top-bar')
+        @include('addons.side-bar')
 </head>
 
 <body>
-        @include('addons.top-bar')
-        @include('addons.side-bar')
 
         <div class="content">
                 @yield('content')
