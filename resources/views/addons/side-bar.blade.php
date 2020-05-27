@@ -42,7 +42,7 @@
 
                         <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                        <svg id="color" enable-background="new 0 0 24 24" height="512"
+                                        <svg id="color" enable-background="new 0 0 24 24" height="50"
                                                 viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="20" cy="10" fill="#22dd22" r="2" />
                                                 <path d="m21.25 13h-2.5c-1.517 0-2.75 1.233-2.75 2.75v.5c0 .414.336.75.75.75h6.5c.414 0 .75-.336.75-.75v-.5c0-1.517-1.233-2.75-2.75-2.75z"
@@ -119,7 +119,7 @@
 
                         <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                        <svg height="512" viewBox="0 0 58 59" width="512"
+                                        <svg height="50" viewBox="0 0 58 59" width="50"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g id="Page-1" fill="none" fill-rule="evenodd">
                                                         <g id="018---Competition" fill="#22dd22" fill-rule="nonzero">
@@ -136,8 +136,8 @@
 
                         <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                        <svg id="Capa_1" enable-background="new 0 0 512 512" height="512"
-                                                viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                        <svg id="Capa_1" enable-background="new 0 0 512 512" height="50"
+                                                viewBox="0 0 512 512" width="50" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                         <path d="m256 392-30 60 30 60c33.137 0 60-26.863 60-60s-26.863-60-60-60z"
                                                                 fill="#22dd22" />
