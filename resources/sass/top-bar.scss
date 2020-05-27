@@ -2,13 +2,15 @@
 
 .top-bar
 {
-        background-color: #003300;
-        
+        //background-color: #333333;
+
         position: fixed;
         width: 100%;
         height: 3rem;
         top: 0;
         left: 0;
+
+        
 
         z-index: 100;
 }
@@ -16,7 +18,7 @@
 .top-bar .container //flexbox
 {
         width: auto;
-        height: auto;
+        height: 100%;
         top: auto;
         left: auto;
 
@@ -30,6 +32,9 @@
         flex-direction: row-reverse;
         justify-content: flex-start;
         align-items: center;
+
+        margin: 0;
+        padding: 0;
 }
 
 .top-bar .container li
@@ -39,9 +44,27 @@
 
 .top-bar .container .item
 {
-        color: #ffffff;
-        width: auto;
-        height: auto;
+        color: #222222;
+        height: 100%;
+        width: 2rem;
 
+        margin-top: auto;
         margin-right: 1rem;
+}
+
+.top-bar .container .item a
+{
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        text-decoration: none;
+
+
+}
+
+.top-bar svg
+{
+        height: 2rem;
+
+        margin: auto;
 }
