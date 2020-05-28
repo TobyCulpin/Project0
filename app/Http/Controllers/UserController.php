@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use App\User;
 use App\UserType;
 
@@ -39,9 +40,8 @@ class UserController extends Controller
 		$user->name = $data['name'];
 		$user->email = $data['email'];
 		
-		if ($data['password'] !== null && $data['confirm_password'] !== null) {
-			$user->password = $data['password'];
-			$user->confirm_password = $data['confirm_password'];
+		if ($data['password'] !== null) {
+			$user->password = Hash::make($data['password']);
 		}
 
 		$user->updated_at = now();

@@ -21,8 +21,16 @@
 			<td>{{ $user->name }}</td>
 			<td>{{ $user->created_at }}</td>
 			<td>{{ $user->updated_at }}</td>
-			<td><button>edit</button></td>
-			<td><button style="color: red">delete</button></td>
+			<td>
+				<form action="/admin/users/{{ $user->name }}">
+					<input type="submit" value="edit">
+				</form>
+			</td>
+			<td>
+				<form>
+					<input type="submit" value="delete" style="color: red">
+				</form>
+			</td>
 		</tr>
 		@endforeach
 		@endisset
