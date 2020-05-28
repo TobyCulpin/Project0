@@ -4,6 +4,7 @@
 
 @section('content')
 	@csrf
+	<div style="margin: 1em">
 	<table style="background-color: #fff">
 		<tr>
 			<th>ID</th>
@@ -35,4 +36,5 @@
 		@endisset
 	</table>
 	<button>Create new</button>
+	</div>
 @stop
