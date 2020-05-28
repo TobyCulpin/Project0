@@ -29,7 +29,7 @@
                         </a>
                 </li>
                 <li class="item">
-                        <p>Login:</p>
+                        <p>{{ Auth::user()->name ?? 'Login' }}</p>
                 </li>
 
         </ul>
