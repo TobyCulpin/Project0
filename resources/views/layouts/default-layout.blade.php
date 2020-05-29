@@ -1,6 +1,6 @@
 <html>
 
-<head>
+<head class="dark">
         <title>ProjectZero - @yield('title')</title>
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/top-bar.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/side-bar.css') }}">
