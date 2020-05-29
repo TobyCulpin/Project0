@@ -69,6 +69,13 @@ function nextTheme()
         let nextTheme = themeMap[currentTheme];
 
         setTheme(nextTheme);
+        swapIcon(currentTheme, nextTheme)
 
         currentTheme = nextTheme;
+}
+
+function swapIcon(current, next)
+{
+        document.body.classList.remove(current);
+        document.body.classList.add(next);
 }
