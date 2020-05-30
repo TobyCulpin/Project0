@@ -1,10 +1,9 @@
+@import "global-variables";
+
 :root {
         
         font-family: 'Open Sans';
-        --text-primary: #b6b6b6;
-        --text-secondary: #ececec;
-        --bg-primary: #333333;
-        --bg-secondary: #222222;
+
         --transition-speed: 600ms;
       }
 
@@ -17,17 +16,29 @@
       }
       
       body {
-        color: black;
-        background-color: white;
+        color: var(--text-color1);
+        background-color: var(--bg-color2);
         margin: 0;
         padding: 0;
+      }
+
+      html
+      {
+        color: var(--text-color1);
+        background-color: var(--bg-color2);
+      }
+
+      head
+      {
+        color: var(--text-color1);
+        background-color: var(--bg-color2);
       }
 
       
       
       .navbar {
         position: fixed;
-        background-color: var(--bg-primary);
+        background-color: var(--bg-color1);
         transition: width 600ms ease;
         overflow: scroll;
 
@@ -58,7 +69,7 @@
         display: flex;
         align-items: center;
         height: 5rem;
-        color: var(--text-primary);
+        color: var(--text-color1);
         text-decoration: none;
         filter:  opacity(0.7);
         transition: var(--transition-speed);
@@ -66,8 +77,8 @@
       
       .nav-link:hover {
         filter: grayscale(0%) opacity(1);
-        background: var(--bg-secondary);
-        color: var(--text-secondary);
+        background: var(--bg-color2);
+        color: var(--text-color2);
       }
       
       .link-text {
@@ -99,8 +110,8 @@
         text-transform: uppercase;
         margin-bottom: 1rem;
         text-align: center;
-        color: var(--text-secondary);
-        background: var(--bg-secondary);
+        background: var(--bg-color3);
+        color: var(--text-color3);
         font-size: 1.5rem;
         letter-spacing: 0.3ch;
         width: 100%;
@@ -176,24 +187,27 @@
       }
       
       .dark {
-        --text-primary: #b6b6b6;
-        --text-secondary: #ececec;
-        --bg-primary: #23232e;
-        --bg-secondary: #141418;
+        --text-primary: #b0b0b0;
+        --text-secondary: #e0e0e0;
+        --bg-primary: #303030;
+        --bg-secondary: #252525;
+        --bg-tertary: #202020;
       }
       
       .light {
         --text-primary: #1f1f1f;
         --text-secondary: #000000;
-        --bg-primary: #ffffff;
-        --bg-secondary: #e4e4e4;
+        --bg-primary: #f0f0f0;
+        --bg-secondary: #e0e0e0;
+        --bg-tertary: #d0d0d0;
       }
       
       .solar {
-        --text-primary: #576e75;
-        --text-secondary: #35535c;
-        --bg-primary: #fdf6e3;
-        --bg-secondary: #f5e5b8;
+        --text-primary: #43585f;
+        --text-secondary: #4a7583;
+        --bg-primary: #f8e9c1;
+        --bg-secondary: #dfcc9a;
+        --bg-tertary: #cfb56d;
       }
       
       .theme-icon {
@@ -211,3 +225,4 @@
       .solar #solarIcon {
         display: block;
       }
+
