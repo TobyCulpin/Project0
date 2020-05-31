@@ -1,0 +1,38 @@
+#title
+{
+        height: 25vh;
+
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 25vh;
+
+        background-color: red;
+
+        text-align: center;
+
+}
+
+#title h1
+{
+        position: relative;
+
+        text-align: center;
+        font-size: 20vh;
+        
+        z-index: 50;
+}
+
+#title img
+{
+        position: fixed;
+
+        left: 0;
+        right: 0;
+        top: 25vh;
+        bottom: 50vh;
+
+        width: 100vw;
+        height: 25vh;
+
+        z-index: 49;
+}

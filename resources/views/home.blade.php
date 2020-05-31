@@ -8,5 +8,10 @@
 @stop
 
 @section('content')
-	<h1 id="title">Project Zero</h1>
+        <div id="title">
+                <h1>Project Zero</h1>
+                <img src="{{ asset('/media/images/ph1.png') }}"></img>
+        </div>
+
+        
 @stop
