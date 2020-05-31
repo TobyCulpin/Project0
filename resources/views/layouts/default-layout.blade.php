@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/side-bar.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/default-layout.css') }}">
 
+        @yield('content-style')
+
         <script defer src="{{ asset('/js/side-bar.js') }}"></script>
 
         @include('addons.top-bar')
