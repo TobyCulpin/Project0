@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use App\User;
 use App\UserType;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+
 
 class UserController extends Controller
 {
@@ -30,24 +33,30 @@ class UserController extends Controller
 
 	public function update(Request $request)
 	{
-		$data = $request->all();
+		$validationRules = [
+			'user_type_id' => ['required', 'integer'],
+		];
 
-		$user = User::select('*')
-			->where('id', '=', $data['id'])
-			->first();
-
-		$user->user_type_id = $data['user_type_id'];
-		$user->name = $data['name'];
-		$user->email = $data['email'];
-		
-		if ($data['password'] !== null) {
-			$user->password = Hash::make($data['password']);
+		if ($request->password !== null) {
+			$validationRules['password'] = ['required', 'string', 'min:8', 'confirmed'];
 		}
 
-		$user->updated_at = now();
+		$validator = Validator::make($request->all(), $validationRules);
+		if ($validator->fails()) {
+			return redirect()->back()
+				->withErrors($validator)
+				->withInput();
+		}
 
+		/* Update the user */
+		$user = Auth::user();
+		$user->fill([
+			'user_type_id' => $request->user_type_id,
+			'password' => Hash::make($request->password),
+		]);
 		$user->save();
 
-		return redirect('/');
-	}
+		return redirect()->back()->with('success', 'This user was sucessfully updated!');
+	}	
+
 }
