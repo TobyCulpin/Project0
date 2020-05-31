@@ -12,6 +12,4 @@
                 <h1>Project Zero</h1>
                 <img src="{{ asset('/media/images/ph1.png') }}"></img>
         </div>
-
-        
 @stop
