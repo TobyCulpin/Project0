@@ -14,3 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@show');
+Route::get('/videos', 'VideosController@show');
+Route::get('/members', 'MembersController@show');
+Route::get('/leaderboards', 'LeaderboardsController@show');
+Route::get('/tournaments', 'TournamentsController@show');
+Route::get('/about', 'AboutController@show');

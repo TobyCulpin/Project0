@@ -1,8 +1,8 @@
 @extends('layouts.default-layout')
 
 
-@section('title', 'Home')
+@section('title', 'Videos')
 
 @section('content')
-	<h1>Home</h1>
+	<h1>Videos</h1>
 @stop

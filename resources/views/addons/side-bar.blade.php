@@ -2,7 +2,7 @@
         <nav class="navbar">
                 <ul class="navbar-nav">
                         <li class="logo">
-                                <a href="#" class="nav-link">
+                                <a href="/" class="nav-link">
                                         <span class="link-text logo-text">Project0</span>
                                         <svg aria-hidden="true" focusable="false" data-prefix="fad"
                                                 data-icon="angle-double-right" role="img"
@@ -21,7 +21,7 @@
                         </li>
 
                         <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="/videos" class="nav-link">
                                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
@@ -41,7 +41,7 @@
                         </li>
 
                         <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="/members" class="nav-link">
                                         <svg id="color" enable-background="new 0 0 24 24" height="50"
                                                 viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="20" cy="10" fill="#22dd22" r="2" />
@@ -73,7 +73,7 @@
                         </li>
 
                         <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="/leaderboards" class="nav-link">
                                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
@@ -118,7 +118,7 @@
                         </li>
 
                         <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="/tournaments" class="nav-link">
                                         <svg height="50" viewBox="0 0 58 59" width="50"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g id="Page-1" fill="none" fill-rule="evenodd">
@@ -135,7 +135,7 @@
                         </li>
 
                         <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="about" class="nav-link">
                                         <svg id="Capa_1" enable-background="new 0 0 512 512" height="50"
                                                 viewBox="0 0 512 512" width="50" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
