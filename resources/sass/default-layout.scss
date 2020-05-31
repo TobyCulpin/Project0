@@ -9,3 +9,12 @@ body
 .extern-link a:visited       { color: var(--link-color2); }
 .extern-link a:hover         { color: var(--link-color3); }
 .extern-link a:active        { color: var(--link-color4); }
+
+footer
+{
+        position: absolute;
+        bottom: 0;
+
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+}
