@@ -1,79 +1,84 @@
+@import "global-variables";
 
-$background-color: rgb(44, 48, 66);
-$navbgcolor: rgb(31, 35, 49);
-$icon-color: #000000;
-$icon-color-hover: #111111;
-$flex-height: 100%;
+.top-bar
+{
+        //background-color: #333333;
 
-body {
-	margin: 0px;
-	font-size: large;
-	background-color: $background-color;
+        position: fixed;
+        width: 100%;
+        height: 3rem;
+        top: 0;
+	left: 0;
+	
+
+	pointer-events: none;
+
+
+        z-index: 100;
 }
 
+.top-bar .container //flexbox
+{
+        width: auto;
+        height: 100%;
+        top: auto;
+        left: auto;
 
-.container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-content: stretch;
-	align-items: stretch;
-	height: $flex-height;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin: 0;
+        padding: 0;
 }
 
-.columns {
-	flex-direction: column;
+.top-bar .container li
+{
+        list-style-type: none;
 }
 
-.rows {
-	flex-direction: row;
+.top-bar .container .item
+{
+        color: #222222;
+        height: 100%;
+        width: 2rem;
+
+        margin-top: auto;
+        margin-right: 1rem;
 }
 
-.navbar {
-	display: flex;
-	font-size: 2em;
-	justify-content: flex-end;
-	align-items: flex-end;
+.top-bar .container .item a
+{
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        text-decoration: none;
+
+
+	pointer-events: all;
+
 }
 
+.top-bar svg
+{
+        height: 2rem;
 
-
-.container-spaced {
-	order: 0;
-  	flex: 1 1 auto;
-  	align-self: auto;
-  	margin-right: 0;
+        margin: auto;
 }
 
-
-.svg-icon {
-	width: 2em;
-	height: 2em;
-}
-      
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-	fill: $icon-color;
-}
-      
-.svg-icon circle {
-	stroke: #000000;
-	stroke-width: 1;
+.top-bar p
+{
+        color: var(--text-color1)
 }
 
-.navbar-item {
-	align-items: flex-end;
-	flex-basis: content;
-}
-
-.svg-login-icon {
-	width: 1em;
-	height: 1em;
-	padding-right: 10px;
-}
-
-.svg-login-icon:hover {
-	fill: $icon-color-hover;
+.top-bar #name
+{
+        width: auto;
 }

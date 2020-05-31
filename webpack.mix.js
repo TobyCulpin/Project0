@@ -12,6 +12,17 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .sass('resources/sass/top-bar.scss', 'public/css')
-    .sass('resources/sass/side-bar.scss', 'public/css');
+        .js('resources/js/side-bar.js', 'public/js')
+        
+        .sass('resources/sass/app.scss', 'public/css')
+        .sass('resources/sass/top-bar.scss', 'public/css')
+        .sass('resources/sass/side-bar.scss', 'public/css')
+        .sass('resources/sass/_global-variables.scss', 'public/css')
+        .sass('resources/sass/default-layout.scss', 'public/css')
+
+        .sass('resources/sass/home.scss', 'public/css')
+        .sass('resources/sass/videos.scss', 'public/css')
+        .sass('resources/sass/members.scss', 'public/css')
+        .sass('resources/sass/leaderboards.scss', 'public/css')
+        .sass('resources/sass/tournaments.scss', 'public/css')
+        .sass('resources/sass/about.scss', 'public/css');
