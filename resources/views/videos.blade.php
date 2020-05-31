@@ -6,6 +6,8 @@
 @section('content-style')
 <script src="https://apis.google.com/js/api.js"></script>
 <script defer src="{{ asset('/js/videos.js') }}"></script>
+
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/videos.css') }}">
 @stop
 
 
