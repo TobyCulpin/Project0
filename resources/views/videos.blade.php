@@ -16,7 +16,7 @@
         @if (isset($videos))
         @foreach ($videos as $video)
         <div class="item">
-                <img class="thumbnail" src="{{ $video->snippet->thumbnails->default->url }}">
+                <img class="thumbnail" src="{{ $video->snippet->thumbnails->medium->url }}">
                 <h2>{{$video->snippet->title}}</h2>
         </div>
         @endforeach
