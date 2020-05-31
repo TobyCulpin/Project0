@@ -1,4 +1,11 @@
+@import "global-variables";
+
 body
 {
         margin-left: 5rem;
 }
+
+.extern-link a:link          { color: var(--link-color1); }
+.extern-link a:visited       { color: var(--link-color2); }
+.extern-link a:hover         { color: var(--link-color3); }
+.extern-link a:active        { color: var(--link-color4); }
