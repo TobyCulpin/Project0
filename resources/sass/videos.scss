@@ -1,0 +1,55 @@
+@import "global-variables";
+
+.video-container
+{
+        position: fixed;
+        top: 15vh;
+        left: 10vw;
+        height: 85vh;
+        width: 85vw;
+
+        display: flex;
+
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+}
+
+.video-container .item .thumbnail
+{
+        width: 10rem;
+        height: 6rem;
+
+        margin: 1rem;
+
+
+        border-radius: 2rem 0.5rem 2rem 0.5rem;
+        text-align: center;
+
+        background-position: center;
+        background-size: cover;
+        //overflow: hidden;
+
+}
+
+.item h2
+{
+        position: relative;
+        color: var(--text-color1);
+        font-size: 1rem;
+
+        margin-top: -0.75rem;
+
+        text-align: center;
+}
+
+.item img
+{
+        object-fit: cover;
+
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+}
