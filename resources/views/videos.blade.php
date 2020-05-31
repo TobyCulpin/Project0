@@ -13,34 +13,66 @@
 
 
 @section('content')
-	<h1>Videos</h1>
-	<button onclick="authenticate().then(loadClient)">authorize and load</button>
-        <button onclick="execute()">execute</button>
-        
-        <div class="video-container">
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title1234567890</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
-                <div class="item"><h2>Title</h2></div>
+<h1>Videos</h1>
+<button onclick="authenticate().then(loadClient)">authorize and load</button>
+<button onclick="execute()">execute</button>
+
+<div class="video-container">
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
+                <h2>Title</h2>
         </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}">
+                <h2>Title123456</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
+                <h2>Title</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}">
+                <h2>Title</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
+                <h2>Title</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}">
+                <h2>Title</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
+                <h2>Title</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
+                <h2>Title</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
+                <h2>Title</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
+                <h2>Title</h2>
+        </div>
+
+        <div class="item">
+                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
+                <h2>Title</h2>
+        </div>
+
+</div>
 @stop

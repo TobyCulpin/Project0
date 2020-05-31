@@ -17,17 +17,21 @@
         align-content: flex-start;
 }
 
-.video-container .item
+.video-container .item .thumbnail
 {
         width: 10rem;
         height: 6rem;
 
         margin: 1rem;
 
-        background-color: #00bb00;
 
         border-radius: 2rem 0.5rem 2rem 0.5rem;
         text-align: center;
+
+        background-position: center;
+        background-size: cover;
+        //overflow: hidden;
+
 }
 
 .item h2
@@ -36,5 +40,16 @@
         color: var(--text-color1);
         font-size: 1rem;
 
-        margin-top: 6rem;
+        margin-top: -0.75rem;
+
+        text-align: center;
+}
+
+.item img
+{
+        object-fit: cover;
+
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
 }
