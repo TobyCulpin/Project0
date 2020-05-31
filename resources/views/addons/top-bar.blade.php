@@ -28,7 +28,7 @@
                                 </svg>
                         </a>
                 </li>
-                <li class="item">
+                <li class="item" id="name">
                         <p>Login:</p>
                 </li>
 
