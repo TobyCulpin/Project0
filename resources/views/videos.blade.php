@@ -3,7 +3,15 @@
 
 @section('title', 'Videos')
 
+@section('content-style')
+<script src="https://apis.google.com/js/api.js"></script>
+<script defer src="{{ asset('/js/videos.js') }}"></script>
+@stop
+
+
+
 @section('content')
 	<h1>Videos</h1>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/e-7SaDN5jYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<button onclick="authenticate().then(loadClient)">authorize and load</button>
+	<button onclick="execute()">execute</button>
 @stop
