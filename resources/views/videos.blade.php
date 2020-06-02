@@ -30,76 +30,20 @@
         </div>
 
         <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
-
-        <div class="item">
-                <img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}">
-                <h2>Title</h2>
-        </div>
-
-        <div class="item">
-                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
-                <h2>Title</h2>
-        </div>
-
-        <div class="item">
-                <img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}">
-                <h2>Title</h2>
-        </div>
-
-        <div class="item">
-                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
-                <h2>Title</h2>
-        </div>
-
-        <div class="item">
-                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
-                <h2>Title</h2>
-        </div>
-
-        <div class="item">
-                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
-                <h2>Title</h2>
-        </div>
-
-        <div class="item">
-                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
-                <h2>Title</h2>
-        </div>
-
-        <div class="item">
-                <img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}">
-                <h2>Title</h2>
-        </div>
-
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph1.png') }}"><h2>Title</h2></div>
-
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
+        <div class="item"><img class="thumbnail" src="{{ asset('/media/images/ph2.png') }}"><h2>Title</h2></div>
 
 
 
