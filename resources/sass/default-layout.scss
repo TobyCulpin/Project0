@@ -17,19 +17,19 @@ body
 
 .content
 {
-        min-height: 95%;
+        min-height: 100%;
 
-        margin: 0 auto -1rem;
+        margin: 0 auto -5rem;
 }
 
-.push
-{
-        height: 3rem;
-}
+
 
 #footer
 {
         position: relative;
+        height: 1rem;
+        padding-top: 2rem;
+
 }
 
 
@@ -39,8 +39,13 @@ body
         #footer
         {
                 margin-left: 0.5rem;
-                height: 1rem;
                 margin-bottom: 0rem;
+        }
+
+
+        .push
+        {
+                height: 2rem;
         }
 }
 
@@ -51,7 +56,10 @@ body
         #footer
         {
                 margin-left: -4.5rem;
-                height: 1rem;
-                margin-bottom: 7rem;
+        }
+
+        .push
+        {
+                height: 8rem;
         }
 }

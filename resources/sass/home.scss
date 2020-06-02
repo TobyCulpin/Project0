@@ -2,37 +2,67 @@
 
 #title
 {
-        height: 25vh;
-
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 25vh;
-
-        text-align: center;
-
+        margin: 0;
+        padding: 0;
 }
 
 #title h1
 {
-        position: relative;
+        position: absolute;
 
         text-align: center;
-        font-size: 20vh;
+        font-size: 8rem;
+
+        right: 0rem;
+        top: 8rem;
+        height: 8rem;
         
         z-index: 50;
+
+        margin: 0;
+        padding: 0;
 }
 
 #title img
 {
-        position: fixed;
+        position: absolute;
 
-        left: 0;
-        right: 0;
-        top: 25vh;
-        bottom: 50vh;
+        right: 0rem;
+        top: 8rem;
+        height: 8rem;
 
-        width: 100vw;
-        height: 25vh;
-
+        width: auto;
         z-index: 49;
+
+        margin: 0;
+        padding: 0;
+}
+
+// Big screens
+@media only screen and (min-width: $critical-width)
+{
+        #title h1
+        {
+                left: 5rem;
+        }
+
+        #title img
+        {
+                left: 5rem;
+        }
+}
+
+
+// Small screens
+@media only screen and (max-width: $critical-width)
+{
+        #title h1
+        {
+                left: 0rem;
+        }
+
+        #title img
+        {
+                left: 0rem;
+        }
 }
