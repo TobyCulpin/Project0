@@ -20,3 +20,15 @@ html
         --link-color3: #c563dd;         //a link when the user mouses over it
         --link-color4: #c563dd;         //a link the moment it is clicked
 }
+
+/* width */
+::-webkit-scrollbar { width: 0.5rem; }
+      
+/* Track */
+::-webkit-scrollbar-track { background: var(--bg-color1); }
+ 
+/* Handle */
+::-webkit-scrollbar-thumb { background: #00bb00; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: #22dd22; }

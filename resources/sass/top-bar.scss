@@ -42,6 +42,8 @@
 .top-bar .container li
 {
         list-style-type: none;
+
+        background-color: var(--bg-color3);
 }
 
 .top-bar .container .item
@@ -51,7 +53,7 @@
         width: 2rem;
 
         margin-top: auto;
-        margin-right: 1rem;
+        padding-right: 1rem;
 }
 
 .top-bar .container .item a
@@ -81,4 +83,8 @@
 .top-bar #name
 {
         width: auto;
+        padding-left: 1rem;
+
+        border-radius: 0 0 0 1rem;
+
 }
