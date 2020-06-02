@@ -21,31 +21,23 @@ h1
 .video-container
 {
         position: relative;
-        margin-right: 2rem;
-
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
 
         display: flex;
-
-
 
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-content: flex-start;
         
+        padding-bottom: 3rem;
 }
 
 // Big screens
 @media only screen and (min-width: $critical-width)
 {
-        .video-container
-        {
-                margin-top: 2rem;
-                margin-left: 2rem;
-
-                padding-bottom: 3rem;
-        }
-
         h1
         {
                 top: 1rem;
@@ -69,17 +61,8 @@ h1
 // Small screens
 @media only screen and (max-width: $critical-width)
 {
-        .video-container
-        {
-                margin-top: 1rem;
-                margin-left: -3rem;
-
-                padding-bottom: 8rem;
-        }
-
         h1
         {
-                margin-left: -5rem;
                 top: 0.5rem;
                 font-size: 4rem;
         }
