@@ -15,25 +15,33 @@
 </head>
 
 <body class="dark">
+        <div id="page-wrapper">
+                <div class="content">
+                        @yield('content')
 
-        <div class="content">
-                @yield('content')
+                </div>
+
+                <div class="push"></div>
+
+                <div id="footer">
+                        <div class="extern-link">
+                                Icons made by
+                                <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+                                , 
+                                <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>
+                                and
+                                <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+                                 from 
+                                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                        </div>
+                </div>
         </div>
 
 
 </body>
 
 <footer>
-        <div class="extern-link">
-                Icons made by
-                <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-                , 
-                <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>
-                and
-                <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
-                 from 
-                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
+        
 </footer>
 
 </html>

@@ -14,8 +14,8 @@
 
 @section('content')
 <h1>Videos</h1>
-<button onclick="authenticate().then(loadClient)">authorize and load</button>
-<button onclick="execute()">execute</button>
+<button id="auth-and-load" onclick="authenticate().then(loadClient)">authorize and load</button>
+<button id="execute" onclick="execute()">execute</button>
 
 <div class="video-container">
 

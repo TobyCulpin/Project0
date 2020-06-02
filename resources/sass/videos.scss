@@ -1,5 +1,6 @@
 @import "global-variables";
 
+
 h1
 {
         text-align: center;
@@ -13,10 +14,16 @@ h1
         background-color: green;
 }
 
-.video-container
+#auth-and-load, #execute
 {
         position: absolute;
-        right: 2rem;
+}
+
+.video-container
+{
+        position: relative;
+        margin-right: 2rem;
+
 
         display: flex;
 
@@ -34,14 +41,27 @@ h1
 {
         .video-container
         {
-                top: 10rem;
-                left: 7rem;
+                margin-top: 2rem;
+                margin-left: 2rem;
         }
 
         h1
         {
                 top: 1rem;
                 font-size: 8rem;
+        }
+
+
+        #auth-and-load
+        {
+                top: 10rem;
+                left: 6rem;
+        }
+
+        #execute
+        {
+                top: 10rem;
+                left: 13rem;
         }
 }
 
@@ -50,8 +70,8 @@ h1
 {
         .video-container
         {
-                top: 5rem;
-                left: 2rem;
+                margin-top: 1rem;
+                margin-left: -3rem;
         }
 
         h1
@@ -59,6 +79,19 @@ h1
                 margin-left: -5rem;
                 top: 0.5rem;
                 font-size: 4rem;
+        }
+
+
+        #auth-and-load
+        {
+                top: 5rem;
+                left: 1rem;
+        }
+
+        #execute
+        {
+                top: 5rem;
+                left: 8rem;
         }
 }
 
