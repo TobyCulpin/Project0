@@ -3,7 +3,12 @@
 
 h1
 {
+
         text-align: center;
+
+        top: 2vw;
+        font-size: 10vw;
+        margin-bottom: 3rem;
 
         user-select: none; /* supported by Chrome and Opera */
         -webkit-user-select: none; /* Safari */
@@ -16,10 +21,12 @@ h1
 #auth-and-load, #execute
 {
         position: absolute;
+        top: 12vw;
 }
 
 .video-container
 {
+
         position: relative;
         margin-right: 1rem;
         margin-left: 1rem;
@@ -38,22 +45,13 @@ h1
 // Big screens
 @media only screen and (min-width: $critical-width)
 {
-        h1
-        {
-                top: 1rem;
-                font-size: 8rem;
-        }
-
-
         #auth-and-load
         {
-                top: 10rem;
                 left: 6rem;
         }
 
         #execute
         {
-                top: 10rem;
                 left: 13rem;
         }
 }
@@ -61,22 +59,13 @@ h1
 // Small screens
 @media only screen and (max-width: $critical-width)
 {
-        h1
-        {
-                top: 0.5rem;
-                font-size: 4rem;
-        }
-
-
         #auth-and-load
         {
-                top: 5rem;
                 left: 1rem;
         }
 
         #execute
         {
-                top: 5rem;
                 left: 8rem;
         }
 }
